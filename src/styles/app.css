@@ -1,0 +1,170 @@
+/* ---------- Global Reset ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* ---------- App Container ---------- */
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+/* ---------- Heading ---------- */
+.app h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+  letter-spacing: -0.5px;
+}
+
+/* ---------- Search Bar ---------- */
+.search-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 15px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.search-bar input::placeholder {
+  color: #9ca3af;
+}
+
+.search-bar button {
+  padding: 14px 22px;
+  font-size: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 500;
+}
+
+.search-bar button:disabled,
+.search-bar input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- Video Player ---------- */
+iframe {
+  width: 100%;
+  height: 420px;
+  border-radius: 16px;
+  border: none;
+  margin-top: 10px;
+}
+
+/* ---------- Video List ---------- */
+.video-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* ---------- Video Card ---------- */
+.video-card {
+  background: #0f172a;
+  border-radius: 16px;
+  padding: 14px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-3px);
+  background: #111c33;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.video-card h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 6px 0 4px;
+}
+
+.video-card p {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* ---------- Notes ---------- */
+.notes {
+  margin-top: 24px;
+  background: #0f172a;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.notes h3 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #38bdf8;
+}
+
+.notes textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* ---------- Study Timer ---------- */
+.study-timer {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* ---------- Done Button ---------- */
+.done-btn-wrapper {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.done-btn-wrapper button {
+  padding: 12px 26px;
+  font-size: 14px;
+  border-radius: 999px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
